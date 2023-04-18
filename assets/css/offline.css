@@ -1,0 +1,260 @@
+/* //SIDEBAR */
+
+.head-sidebar{
+    width:100%;
+}
+
+.sidebar{
+    border-right: #E5E5E5 solid 1px;
+    padding-right: 0px;
+    height: 100vh;
+}
+
+.headright{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#nav-home-tab{
+    height: 45px;
+}
+
+a.active{
+    background: #0C80B714;
+}
+
+.list-group-item.active{
+    background: #0C80B714 !important;
+}
+
+.list-group-item:hover{
+    background: #0C80B714 !important;
+}
+
+.submenu-sidebar{
+    background: transparent !important;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+.side-footer{
+    width: 100%;
+}
+
+/* FONTS  */
+
+.h6-s {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #333333;
+}
+
+.h6-b {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #0C80B7;
+}
+
+h5 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.link-resource {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #0C80B7;
+}
+
+
+/* MEDIA RESOURCES */
+
+.card{
+    border-radius: 4em 0px 0px 0px;
+}
+
+#page-content-wrapper{
+    background-image: url('../images/headright.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+hr{
+    border: #E5E5E5 solid 1px;
+}
+
+.media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #333;
+    padding: 0;
+}
+
+.img-rounded {
+    border-radius: 50%; 
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #333;    
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#v-pills-tab .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* Opened submenu icon */
+#v-pills-tab .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.iframe-pdfs{
+    width: 100%;
+    height: 100vh;
+}
+
+.modal-dialog{
+    max-width: 90% !important;
+}
+
+.modal-content{
+    width: 100%;
+}
+
+/*SIDEBAR*/
+
+.hamburguer{
+    width: 25px;
+    height: 3px;
+    background-color: #0C80B7;
+    margin: 4px 0;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #F9F9F9;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    width: 15rem;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+    #sidebarToggle{
+        display: none;
+    }
+}
